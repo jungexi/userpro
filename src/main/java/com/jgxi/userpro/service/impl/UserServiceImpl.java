@@ -15,4 +15,9 @@ public class UserServiceImpl implements UserService {
     public List<User> queryUserList() {
         return userDao.selectList(null);
     }
+
+    @Override
+    public void addUser(User user) {
+        userDao.insert(user);
+    }
 }

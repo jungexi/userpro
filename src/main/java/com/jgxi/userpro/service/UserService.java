@@ -6,4 +6,5 @@ import java.util.List;
 
 public interface UserService {
     public List<User> queryUserList();
+    public void addUser(User user);
 }
